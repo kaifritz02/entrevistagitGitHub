@@ -8,17 +8,27 @@
     <title>CursoGit-GitHub</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#draggable").draggable();
+        });
+    </script>
 </head>
+
 
 <body>
 
     <header>
         <div id="logo">
+            <img src="logos/github.png" width=50">
             <img src="logos/White GitHub Brand Name.png" width="120">
         </div>
-
-
-
 
     </header>
 
@@ -26,14 +36,13 @@
 
         <section id="menu-lateral">
             <nav>
-                <ul>
-
-                    <li><a href="#"><img src="logos/menu.png" width="25">Configurações</li>
-                    <li><a href="#"><img src="logos/aulas.png" width="25">Aulas</li>
+                <ul href="#" class="links">
+                    <li><a href="#"><img class="menu" src="logos/menu.png" width="26">Configurações</li>
+                    <li><a href="#"><img class="aulas" src="logos/aulas.png" width="25">Aulas</li>
                     <li><a href="#"><img src="logos/podcasts.png" width="25">Podcasts</li>
                     <li><a href="#"><img src="logos/tests.png" width="25">Testes</li>
                     <li><a href="#"><img src="logos/lab.png" width="25">Laboratório</li>
-                    <li><a href="#"><img src="logos/google_sala.png" width="25">Google Class</li>
+                    <li><a href="#"><img src="logos/google_sala.png" width="25">Google Classroom</li>
                     <li><a href="#"><img src="logos/links.png" width="25">Links</li>
                     <li><a href="#"><img src="logos/documentos.png" width="25">Documentos</li>
                     <li><a href="#"><img src="logos/youtube.png" width="25">YouTube</li>
@@ -44,112 +53,16 @@
                     <li><a href="#"><img src="logos/branches.png" width="25">Divisões</li>
                     <li><a href="#"><img src="logos/dontpad.png" width="25">DontPad</li>
                     </a>
-
                 </ul>
             </nav>
         </section>
 
-        <section id="Comandos">
-            Tabela de Comandos git
-            <table border="3">
-
-                <tr>
-                    <th>Descrição</th>
-                    <th>Comando</th>
-                </tr>
-
-                <tr>
-                    <td>Ver a versão</td>
-                    <td>git --version</td>
-                </tr>
-
-                <Tr>
-                    <td>Descrição</td>
-                    <td>Comando</td>
-                </Tr>
-
-                <Tr>
-                    <td>Ver a versão</td>
-                    <td>git --versão</td>
-                </Tr>
-
-                <Tr>
-                    <td>Criar uma pasta</td>
-                    <td>mkdir nome da pasta</td>
-                </Tr>
-
-                <Tr>
-                    <td>Inicializar o repositório</td>
-                    <td>git init</td>
-                </Tr>
-
-                <Tr>
-                    <td>Visualizar informações</td>
-                    <td>git status</td>
-                </Tr>
-
-                <Tr>
-                    <td>Listar recurso da massa</td>
-                    <td>ls</td>
-                </Tr>
-
-                <Tr>
-                    <td>Navegar nas massas</td>
-                    <td>cd ou cd .. </td>
-                </Tr>
-
-                <Tr>
-                    <td>Abrir nano</td>
-                    <td>nano nome do arquivo</td>
-                </Tr>
-
-                <Tr>
-                    <td>Fechar nano</td>
-                    <td>CTRL + X</td>
-                </Tr>
-
-                <Tr>
-                    <td>Quem é você? </td>
-                    <td>git config --nome de usuário local "seu nome" e e-mail do usuário "seu e-mail"</td>
-                </Tr>
-
-                <Tr>
-                    <td>Listar os commits</td>
-                    <td>"git log ou git log --on-line ou git log -p obs: use o 'q' para sair"</td>
-                </Tr>
-
-                <Tr>
-                    <td>Ignorar o arquivo</td>
-                    <td>criar o arquivo .gitignore, depois adicionar e commitar</td>
-                </Tr>
-
-                <Tr>
-                    <td>Listar repositório remoto</td>
-                    <td>git remoto</td>
-                </Tr>
-
-                <Tr>
-                    <td>Adcionar repositório</td>
-                    <td>git remoto adicionar origem urldo repositório</td>
-                </Tr>
-
-                <Tr>
-                    <td>Enviar para o remoto com -u</td>
-                    <td>git push -u origem master, depois use o empurrão git</td>
-                </Tr>
-
-                <Tr>
-                    <td>Desfazer commits</td>
-                    <td>git reverte colocar o hash do seu commit</td>
-                </Tr>
-
-            </table>
-        </section>
-
+        <div id="draggable" class="ui-widget-content">
+        </div>
     </main>
-<Br>
-    <footer>
-        CursoGit-GitHub&copy 2022 - Kairon
+    <Br>
+    <footer id="texto-rodape">
+        Curso de Git & GitHub 2022 - Kairon &copy
     </footer>
 
 </body>
